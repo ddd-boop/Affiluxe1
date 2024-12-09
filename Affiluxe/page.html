@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+       
+        <title  >
+ 
+            Affiluxe.com
+        </title>
+        <meta charset="UTF-8">
+        <meta name="theme-color" content="white" media="(prefers-color-scheme: white)">
+        <meta name="theme-color" content="black">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2, viewport-fit=cover">    
+       <link rel="stylesheet" type="text/css" href="css/home.css"> 
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/responsive-home.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+    </head>
+    <body id="body">
+        <div class="nav-container">
+            <div class="nav-contain" >
+               
+                <div class="nav">
+                    <div class="bar-con"  id="menu">  <i class="fa fa-bars" title="menu" ></i></div>
+                  
+                   
+                    <div class="photo" id="user">
+                        <i class="fa fa-user" title="profile">
+                          <a href="https://chat.whatsapp.com/DuPlJMSspGN3COOKhdF3D6"><div class="test" title="Affiluxe group">
+                            <i class="fa fa-users"></i>
+                        </div></a>  
+                        </i>
+                    </div>
+                    <div class="affiluxe">
+                   <div class="aff">Affiluxe</div>
+                   <div class="h2"> welcome : <span id="dashboardUsername"></span></div>                    </div>
+                </div>
+              
+            </div>
+            <div class="welcome">
+           
+                
+            </div>
+            
+        </div>
+        <div class="clear"></div>
+        <div class="nav-content">
+
+        </div>
+        
+        <div class="tasks" id="tasks"></div>
+        <div class="contain" id="contain">
+            <div class="ttt zindex" id="notify">
+                <div class="tasssk" id="note">
+                    <a href="">
+                    <div class="ccoon">
+                        <div class="ccc">
+                    <i class="fa fa-arrow-left">home</i>
+                    </div>
+                </div>
+                </a>
+ <div class="content-1">
+    No notifications are available now come back later
+</div>
+                </div>
+
+            </div>
+            <div class="ttt zindex" id="sponsorer">
+                <div class="tasssk" id="sspp">
+                    <a href="">  
+                    <div class="cconn">
+                        <div class="ccc">
+                    <i class="fa fa-arrow-left">home</i>
+                </div>
+            </a>
+                <div class="post-spon">
+                  <span class="sp-text"> Sponsor Post</span> 
+                </div>
+                <div class="text-xon">
+                    <div class="contt"> 
+                        <div class="img-con">
+                            <img src="images/AFFILUXE.jpg" alt="" id="img">
+                        </div>
+                        <div class="download-con">
+                            DOWNLOAD
+                        </div>
+                    </div>
+                  <div class="mytext" id="text">
+                     join affiluxe to double your income  in just a space 1 month
+                     <div class="cop"   onclick="text()" >Copy</div></div>
+                    <div class="post">
+                        <div class="spons">
+                           <span class="sp">
+                               Refer
+                           </span>
+                          
+                        </div>
+    
+                        <div class="sponso" onclick="copyText()" id="copy" >
+                            <span class="ccop">copy link</span>
+                        </div>
+                        <div class="text-link">
+    
+                          <input class="input" id="myText" type="text" value="https://Affiluxe.versa.app" readonly />
+                          <div class="mess" id="message-1">
+                               
+                          Referral Link Copied
+                           </div>
+                           </div>
+                          
+                    </div>
+                  
+                </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="ttt zindex " id="dailly">
+                
+                <div class="d-head" id="dad">
+                    <div class="tassk">
+                        <a href="">
+                        <div class="ccon" >
+                           
+                        <i class="fa fa-arrow-left" id="coon">home</i>
+                  
+                    </div>
+                    </a>
+                    </div>
+                    <div class="tass-head">
+                        <span class="ttext">
+                            Affiluxe task center
+                        </span>
+
+                    </div>
+                    <div class="task-1">
+                        Click the button below to complete todays task
+                 <a href=""><button type="submit" class="submit" id="addFundsButton"   >follow twitter account</button></a>      
+                    </div>
+                
+                   
+                       
+                      
+                        <div class="follow">
+                            Affiluxe
+                        </div>
+                        <div class="alertt">
+                            please ensure to complete every task on this session to avoid problems when receiving payment
+                        
+                    </div>
+                </div>
+
+            </div>
+         
+            <div class="ttt zindex" id="withdrawal">
+                <div class="tasssk" id="wy">
+                    <a href="">
+                    <div class="ccoon">
+                        <div class="ccc">
+                    <i class="fa fa-arrow-left">home</i>
+                    </div>
+                </div>
+                </a>
+                <div class="container" id="draw">
+                    <h1>Withdrawal Portal</h1>
+                    <input type="text" id="bankName" class="inp" placeholder="Bank Name" />
+                    <input type="text" id="accountName" class="inp" placeholder="Account Name" />
+                    <input type="text" id="accountNumber" class="inp" placeholder="Account Number" />
+                    <input type="number" id="withdrawalAmount" class="inp" placeholder="Withdrawal Amount" />
+                    <input type="text" placeholder="AffiluxeUsername" class="inp" id="AffiluxeUsername">
+                    <button onclick="processWithdrawal()">Withdraw</button>
+                    <p class="error" id="withdrawalError"></p>
+                </div>
+                <div  id="contaier">
+                    
+                    
+                </div>
+                </div>
+
+            </div>
+           
+            <div class="ttt" id="upgrades">
+                <div class="tasssk" id="up">
+                    <a href="">
+                    <div class="ccoon">
+                        <div class="ccc">
+                    <i class="fa fa-arrow-left">home</i>
+                    </div>
+                </div>
+                </a>
+                
+               
+  <div class="in-3">
+<div class="con-1">
+    Vendor-1<br>
+    Pro package <br>
+    price:$9
+</div>
+ <button type="submit" class="butt-3">Buy</button>
+   </div>
+   <div class="in-3">
+    <div class="con-1">
+        Vendor-2
+        <br>
+    Lite package<br>
+        price:$6
+    </div>
+     <button type="submit" class="butt-3">Buy</button>
+       </div>
+<div class="tv">
+    <div class="about">
+    
+    </div>
+    <div class="aaff"> Affiluxe</div>
+       
+</div>
+                
+                </div>
+              
+            </div>
+            <div class="ttt zindex" id="spin-to">
+                <div class="tasssk" id="spin-up">
+                   
+                    <div class="cconn">
+                        <a href="">  
+                        <div class="ccc">
+                    <i class="fa fa-arrow-left">home</i>
+                </div>
+            </a>
+            <div class="class">
+                Spin To Win
+            </div>
+            <div class="wheel-container">
+                <div class="wheel" id="wheel">
+                    <!-- Prize sectors labeled on the wheel -->
+                    <div class="sector" style="transform: rotate(0deg);">+$1</div>
+                    <div class="sector" style="transform: rotate(30deg);">+$0</div>
+                    <div class="sector" style="transform: rotate(60deg);">+$2</div>
+                    <div class="sector" style="transform: rotate(90deg);">+$0</div>
+                    <div class="sector" style="transform: rotate(120deg);">+$0</div>
+                    <div class="sector" style="transform: rotate(150deg);">+$3</div>
+                    <div class="sector" style="transform: rotate(180deg);">+$1</div>
+                    <div class="sector" style="transform: rotate(210deg);">+$0</div>
+                    <div class="sector" style="transform: rotate(240deg);">+$2</div>
+                    <div class="sector" style="transform: rotate(270deg);">+$0</div>
+                    <div class="sector" style="transform: rotate(300deg);">+$1</div>
+                    <div class="sector" style="transform: rotate(330deg);">+$3</div>
+                </div>
+                <button id="spinButton" class="btn">Spin the Wheel</button>
+                <div id="prizeAmount">178787</div>
+                <div class="spin-balance">
+                    <span>spin balance</span><br>
+                    <span class="span-2">$0.00</span>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        </div>
+
+     
+
+    <div class="ttt zindex" id="invester">
+        <div class="tasssk" id="pay">
+           
+            <div class="cconn">
+                <a href="">  
+                <div class="ccc">
+            <i class="fa fa-arrow-left">home</i>
+        </div>
+    </a>
+    <div class="investo">
+        Top investments
+    </div>
+  <div class="pay-container">
+   <div class="in-1">
+<div class="con-1">
+    Invest $1 <br>
+    weekly-profit:$2
+</div>
+ <button type="submit" class="butt">Invest</button>
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $2 <br>
+        weekly-profit:$4
+    </div>
+     <button type="submit" class="butt">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $3 <br>
+        weekly-profit:$6
+    </div>
+     <button type="submit" class="butt">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $4 <br>
+        weekly-profit:$8
+    </div>
+     <button type="submit" class="butt">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $5 <br>
+        weekly-profit:$10
+    </div>
+     <button type="submit" class="butt">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $6 <br>
+        weekly-profit:$12
+    </div>
+     <button type="submit" class="butt">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $7 <br>
+        weekly-profit:$14
+    </div>
+     <button type="submit" class="butt">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $8 <br>
+        weekly-profit:$16
+    </div>
+     <button type="submit" class="butt">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $9 <br>
+        weekly-profit:$18
+    </div>
+     <button type="submit" class="butt">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $10 <br>
+        weekly-profit:$20
+    </div>
+     <button type="submit" class="butt-2">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $12 <br>
+        weekly-profit:$24
+    </div>
+     <button type="submit" class="butt">Invest</button>
+    
+   </div>
+   
+
+   <div class="in-1">
+    <div class="con-1">
+        Invest $15 <br>
+        weekly-profit:$30
+    </div>
+     <button type="submit" class="butt">Invest</button>
+    
+   </div>
+
+   <div class="in-1">
+    <div class="con-1">
+        Invest $20 <br>
+        weekly-profit:$40
+    </div>
+     <button type="submit" class="butt">Invest</button>
+    
+   </div>
+
+   <div class="in-1">
+    <div class="con-1">
+        Invest $22 <br>
+        weekly-profit:$44
+    </div>
+     <button type="submit" class="butt">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $25 <br>
+        weekly-profit:$50
+    </div>
+     <button type="submit" class="butt">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $30 <br>
+        weekly-profit:$60
+    </div>
+     <button type="submit" class="butt">Invest</button>
+    
+   </div>
+
+   <div class="in-1">
+    <div class="con-1">
+        Invest $35 <br>
+        weekly-profit:$70
+    </div>
+     <button type="submit" class="butt">Invest</button>
+    
+   </div>
+
+   <div class="in-1">
+    <div class="con-1">
+        Invest $40 <br>
+        weekly-profit:$80
+    </div>
+     <button type="submit" class="butt">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $50 <br>
+        weekly-profit:$100
+    </div>
+     <button type="submit" class="butt-2">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $60 <br>
+        weekly-profit:$120
+    </div>
+     <button type="submit" class="butt-2">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $100 <br>
+        weekly-profit:$150
+    </div>
+     <button type="submit" class="butt-2">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $300 <br>
+        weekly-profit:$600
+    </div>
+     <button type="submit" class="butt-2">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $500 <br>
+        weekly-profit:$1000
+    </div>
+     <button type="submit" class="butt-2">Invest</button>
+    
+   </div>
+   <div class="in-1">
+    <div class="con-1">
+        Invest $1000 <br>
+        weekly-profit:$2000
+    </div>
+     <button type="submit" class="butt-2">Invest</button>
+    
+   </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+            <div class="menu hidden" id="menu-con">
+                <div class="af-con">
+                     
+              
+                    <div class="pics">
+                       Affiluxe
+                    </div>
+                    <div class="bell-con fa fa-bell" title="notifications" id="notifications">
+                        Notifications
+                    </div>
+                    <div class="sponsorr">
+                       <span class="ss fa fa-empire" title="sponsor post" id="sponsor">Referral cx</span>
+                    </div>
+
+                    <div class=" set" title="task" id="daily"> 
+                        <span class="tt fa fa-gift"> Daily-Task</span>
+
+                    </div>
+                    <div class="withdraw-men" title="withdraw" id="channels" >
+                        <span class="ww fa fa-tv">
+                            Channels
+                        </span>
+                    </div> 
+                    <div class="sett" title="upgrade account" id="upgrade">
+                        <span class="setting fa fa-upload">
+                            Upgrade
+                        </span>
+                        
+
+                    </div>
+                    <div class="button-con">
+                        <a href="index.html">
+                        <button value="logout">
+                            Logout
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="ref-container" id="container">
+              
+                <div class="ref-words">
+                     Available balance <span>$</span>
+                </div>
+               
+                <div class="second">
+                    
+                    <div class="naira">
+                     <div class="n"> </div>  
+                    </div>
+                   
+                    <div class="ref-bal-con" title="referral balance">
+                        <div class="ref-balance" id="availableBalance" >
+                  
+                        </div>
+                        <div class="with" id="withdraw" title="WIthdraw fund's">
+                            Withdraw
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-container">
+                <div class="invest" id="invest">
+                            invest to earn more
+                            <i class="fa fa-anchor"></i>
+                </div>
+                <div class="spin" id="spin">
+                    Spin to win more<br>
+                    <i class="fa fa-empire" ></i>
+                </div>
+                <div class="play" id="game">
+                   Loan from Affiluxe
+                    <br>
+                    <i class="fa fa-gift"></i>
+                </div>
+            </div>
+            <div class="ref-no-container">
+                <div class="con">
+                    <div class="ref-num" title="number of referrals">
+                        <div class="ref-number">
+                         Referral balance:<span class="act">$</span>
+                        </div>
+                        <div class="number-ref" id="referralBalance" >
+                        $0.00  
+                        </div>
+                      
+                    </div>
+                    <div class="task-earnings" title="task balance">
+                        <div class="task-bal"  >
+                            Activity balance:
+                        </div>
+                        <div class="tas">$</span>
+                            <span class="man " id="balanceAmount">0.00</span>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="constant">
+                    <div class="sponsor-con">
+                        <div class="total">
+                            Total balance:
+                            <div class="total-bal">
+                                
+                               <div class=" caa" id="totalBalance">$0.00</div>
+                               <span class="soon">$</span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                    <div class="cont">
+                        <div class="affilate">
+                            Number of referral:
+                        </div>
+                       
+                            <div class=" afff">
+                            0
+                            
+                        </div>
+                        </div>
+                    </div>
+                    
+                </div>
+              
+                
+            </div>
+               </div>
+            </div>
+        </div>
+        
+    </body>
+    <script type="text/javascript" src="javascript/jquery.js"></script>
+    <script type="text/javascript" src="javascript/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="javascript/home.js">
+    </script> 
+
+</html>

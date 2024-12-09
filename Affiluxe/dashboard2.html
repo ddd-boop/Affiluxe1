@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            
+        }
+        h2 {
+            text-align: center;
+        }
+        .dashboard {
+            margin-top: 30px;
+        background-color: #fff;
+         
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+         
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            width: 91%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .user-list {
+            margin: 22px;
+            
+        }
+        .user-list div {
+           margin: 10px;
+        border: 1px solid rgb(255, 85, 0);
+        border-radius: 10px;
+        padding: 11px;
+        width: 92%;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: inline-end;
+            position: relative;
+            bottom: 41px;
+            left: 5px;
+
+        }
+        .btn{
+            padding: 10px 50px 10px 50px;
+            border-radius:10x;
+            background-color: orangered;
+            margin: 0 auto;
+            position: relative;
+            top: 10px;
+            float: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Admin Dashboard</h2>
+    <a href=" file:///C:/Users/vasty/Desktop/Affiluxe/login.html"> <button class="btn">Logout</button></a>
+    <div class="dashboard">
+        <h3>User Accounts</h3>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search by username" oninput="searchUsers()">
+        </div>
+
+        <!-- User List -->
+        <div id="userList" class="user-list">
+            <!-- User list will be populated dynamically -->
+        </div>
+      
+
+        </div>
+        
+    </div>
+
+    <script>
+        const users = JSON.parse(localStorage.getItem('users')) || [];
+        const userListElement = document.getElementById('userList');
+        const searchInput = document.getElementById('searchInput');
+
+        // Function to display users in the list
+        function displayUsers(filteredUsers) {
+            userListElement.innerHTML = ''; // Clear current list
+            filteredUsers.forEach((user, index) => {
+                const userDiv = document.createElement('div');
+                userDiv.innerHTML = `Username: ${user.username},<br> Password: ${user.password} ,<br>email: ${user.email}
+                    <button onclick="deleteUser(${index})">Delete</button>`;
+                userListElement.appendChild(userDiv);
+            });
+        }
+
+        // Function to handle user deletion
+        function deleteUser(index) {
+            users.splice(index, 1); // Remove the user from the array
+            localStorage.setItem('users', JSON.stringify(users)); // Update localStorage
+            searchUsers(); // Re-apply the search filter to update the list
+        }
+
+        // Function to filter users based on search input
+        function searchUsers() {
+            const query = searchInput.value.toLowerCase(); // Get the search query in lowercase
+            const filteredUsers = users.filter(user => 
+                user.username.toLowerCase().includes(query) // Match the username with the query
+            );
+            displayUsers(filteredUsers); // Display the filtered users
+        }
+
+        // Initially display all users
+        displayUsers(users);
+    </script>
+
+</body>
+</html>

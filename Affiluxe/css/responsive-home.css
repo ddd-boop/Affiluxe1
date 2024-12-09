@@ -1,0 +1,1410 @@
+@media (max-width: 768px ) {
+body{
+    user-zoom:10% !important;
+}
+    .submit{
+        position: relative;
+        top: 40px;
+    }
+    .container{
+        position: relative;
+    }
+    .ccoon {
+        padding-top: 7px;
+        position: relative;
+        top: 39px;
+        height: 40px;
+        width: 100%;
+        border: 2px solid black;
+        border-left-color: transparent;
+        border-right-color: transparent;
+}
+    .total{
+        font-size: 17px !important;
+    }
+     .ref-balance{
+         position: relative !important;
+         left: -105px !important; top: 31px;
+         
+     }
+
+     .cconn{
+        padding-top: 7px;
+        position: relative;
+        top: 40px;
+        left:0px;
+        height: 40px;
+        width: 100%;
+        border: 2px solid black;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+     .contain{
+         height: 585px !important;
+     }
+     .con{
+         width:99%;
+         height: 130px;
+     }
+     .task-earnings{
+         position: relative;
+         bottom: 120px;
+         height: 120px;
+         width:140px;
+     }
+     .ref-num{
+         height: 120px;
+         width: 140px;
+     }
+    .ref-number{
+        font-size: 20px;
+    }
+    .task-bal{
+        font-size: 23px;
+    }
+    .div{
+        position: relative;
+        bottom: 8px;
+        font-size: 30px;
+    }
+    .photo{
+     position: absolute;
+     left: 86%;
+    }
+    .test{
+     position: fixed;
+     top:401px;    
+     right: 10px;
+     height: 40px;
+        width: 50px;
+    }
+    .tat{
+     color: rgb(8, 6, 7);
+     font-size: 17.8px;
+     height: 2px;
+     width: 3px;
+     position: relative;
+     bottom: 3px;
+     font-weight: bolder;
+     right: 20px;
+ }
+ .constant{
+     height: 120px;
+     position: relative !important;
+     top: 1px !important;
+ }
+ .sponsor-con{
+    width: 140px;
+    height: 85%;
+ }
+ 
+ .tas{
+    position: relative !important;
+                right: -13px;
+                top: 35px !important;
+                width: 100%;
+                right: 5px;
+                font-size: 25px;
+ }
+ .number-ref{
+   position: relative;
+    top: 25px;
+    right: 18px;
+ }
+ .cont{
+     height: 85%;
+     width: 116px;
+     border: 3px solid;
+     border-radius: 10px;
+     margin: 3px;
+     float: right;
+     position: relative;
+     left: 148px;
+     bottom: 1px;
+ }
+ 
+ .fa-users{
+     font-size: 31px !important;
+     position: relative;
+     bottom: 5px;
+ }
+ 
+ .top{
+     position: relative;
+     top: 200px;
+     height: 50px;
+     width: 93%;
+     border-radius: 20px;
+     background-color: transparent;
+     margin: 0 auto;
+    
+ }
+ .contan{
+     width:100.2%;
+     height: 100%;
+    background-color:transparent;
+     border-radius: 20px;
+ }
+ .post{
+     position: relative !important;
+     height: 85px;
+     width: 96%;
+     bottom: -58px;
+     margin: 0 auto;
+     left: 1px;
+     border: 3px solid;
+ }
+ .affilate{
+     font-size: 16px;
+ }
+ .caa{
+     position: relative;
+     top: -14px;
+     font-size: 20px !important;
+ }
+ .alertt{
+     position: relative;
+     right: 13px;
+     top: 155px;
+ }
+ .sp{
+    position: relative;
+    bottom: 1px;
+    left: 9px;
+    font-size: 16px;
+ }
+ .spons{
+     height: 30px;
+     width: 90px;
+     border: 1px solid black;
+     color: rgb(253, 252, 252);
+     font-weight: bolder;
+     margin: 4px;
+     padding: 3px;
+     border-radius: 10px;
+     font-size: 13px;
+     background-color: black;
+ }
+ 
+ .sponso{
+     height: 30px;
+     width: 70px;
+     border: 1px solid black;
+     color: rgb(250, 249, 249);
+     font-weight: bolder;
+     margin: 10px;
+     padding: 3px;
+     border-radius: 10px;
+     font-size: 13px;
+     background-color: black;
+     position: relative;
+     left: 382px;
+     bottom: 40px;
+ }
+ .vas{
+     position: relative;
+     right: 90px;
+ }
+ .text-link{
+     width: 100%;
+     text-align: center;
+     position: relative;
+     left: 2px;
+     bottom: 50px;
+     font-weight: bolder;
+     height: 50px;
+   
+ }
+ 
+ .hidden{
+     height: 100%;
+     width: 210px;
+     animation-name: menu;
+     animation-fill-mode: forwards;
+     animation-duration: 0.3s;
+ }
+ @keyframes menu{
+     from{
+         width: 1px;
+     }
+     to{
+         width: 130px;
+     }
+ }
+ .with{
+     position: relative;
+     left: 2px;
+     bottom: 4px;
+ }
+ .afff{
+     font-size: 22px !important;
+ }
+ .bell-con{
+     font-size: 22px !important;
+     padding-bottom:5px !important;
+     font-weight: bolder;
+      
+     width:102% !important ;
+     margin:0 ;
+     border-left-color: grey !important;
+     border-right-color: grey !important;
+ }
+ .sponsorr{
+     font-size: 24px !important;
+     padding: 0;
+    
+     width:102% !important;
+     margin:0 ;
+     
+ }
+.ss{
+    font-size: 23px !important;
+    font-weight: bolder;
+    position: relative;
+    top: 6px;
+    right: 1px;
+}
+.set{
+    font-size: 23px !important;
+    font-weight: bolder;
+   
+    width: 102% !important;
+    margin:0 ;
+    
+}
+.input{
+    width: 80%;
+    padding: 5px;
+    top: 3px;
+    /* top: 0px; */
+    right: 0;
+}
+.tt{
+    font-size: 22px !important;
+    font-weight: bolder;
+    position: relative !important;
+    top: -10px !important;
+}
+.ww{
+    font-size: 22px !important;
+    font-weight: bolder !important;
+    color: #000;
+    position: relative !important;
+    top: -3px !important;
+    left: -2px !important;
+}
+.sett{
+    height: 30px;
+    width: 100%;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+}
+.setting{
+    font-size: 23px !important;
+    font-weight: bolder;
+    position: relative;
+    top: -10px;
+    left: -2px;
+}
+.withdraw-men {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+}
+button{
+    padding: 17px;
+    padding-top:8px;
+    padding-bottom: 10px;
+}.hh{
+    position: absolute;
+    top: 10px;
+    left: 69px;
+    font-size: 16px;
+    width: 51px;
+    height: 30px;
+    padding: 3px;
+}
+.menu{
+    border: 1px solid black;
+    position: fixed;
+    left: -3px;
+    top: 80px;
+    z-index: 1;
+    height: 100%;
+    width: 210px;
+    animation-name: menu;
+    animation-fill-mode: forwards;
+    animation-duration: 0.09s;
+}
+.ttt{
+    width: 103%;
+        z-index: 9;
+        position: absolute;
+        bottom: -20px;
+        right: -3px; 
+        
+}
+}
+
+@media (max-width:425px) {
+    .submit{
+        border-radius: 10px;
+        position: relative;
+        top: 20px;
+        left: 5px;
+        font-size: 20px !important;
+    }
+    .container{
+        position: relative;
+    }
+    .ccoon {
+        padding-top: 7px;
+        position: relative;
+        top: 39px;
+        height: 40px;
+        width: 100%;
+        border: 2px solid black;
+        border-left-color: transparent;
+        border-right-color: transparent;
+}
+    .total{
+        font-size: 17px !important;
+    }
+     .ref-balance{
+         position: relative !important;
+         left: -105px !important;
+         top: 31px;
+         
+     }
+
+     .cconn{
+        padding-top: 7px;
+        position: relative;
+        top: 40px;
+        left:0px;
+        height: 40px;
+        width: 100%;
+        border: 2px solid black;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+     .contain{
+         height: 560px !important;
+     }
+     .con{
+         width:99%;
+         height: 130px;
+     }
+     .task-earnings{
+         position: relative;
+         bottom: 120px;
+         height: 120px;
+         width:140px;
+     }
+     .ref-num{
+         height: 120px;
+         width: 140px;
+     }
+    .ref-number{
+        font-size: 20px;
+    }
+    .task-bal{
+        font-size: 23px;
+    }
+    .div{
+        position: relative;
+        bottom: 8px;
+        font-size: 30px;
+    }
+    .photo{
+     position: absolute;
+     left: 86%;
+    }
+    .test{
+     position: fixed;
+     top:401px;    
+     right: 10px;
+     height: 40px;
+        width: 50px;
+    }
+    .tat{
+     color: rgb(8, 6, 7);
+     font-size: 17.8px;
+     height: 2px;
+     width: 3px;
+     position: relative;
+     bottom: 3px;
+     font-weight: bolder;
+     right: 20px;
+ }
+ .constant{
+     height: 120px;
+     position: relative !important;
+     top: 1px !important;
+ }
+ .sponsor-con{
+    width: 140px;
+    height: 85%;
+ }
+ 
+ .tas{
+    position: relative !important;
+                right: -13px;
+                top: 35px !important;
+                width: 100%;
+                right: 5px;
+                font-size: 25px;
+ }
+ .number-ref{
+     position: relative;
+     top: 25px;
+     right: 18px;
+ }
+ .cont{
+     height: 85%;
+     width: 116px;
+     border: 3px solid;
+     border-radius: 10px;
+     margin: 3px;
+     float: right;
+     position: relative;
+     left: 148px;
+     bottom: 1px;
+ }
+ 
+ .fa-users{
+     font-size: 31px !important;
+     position: relative;
+     bottom: 5px;
+ }
+ 
+ .top{
+     position: relative;
+     top: 200px;
+     height: 50px;
+     width: 93%;
+     border-radius: 20px;
+     background-color: transparent;
+     margin: 0 auto;
+    
+ }
+ .contan{
+     width:100.2%;
+     height: 100%;
+    background-color:transparent;
+     border-radius: 20px;
+ }
+ .post{
+     position: relative !important;
+     height: 85px;
+     width: 96%;
+     bottom: -58px;
+     margin: 0 auto;
+     left: 1px;
+     border: 3px solid;
+ }
+ .affilate{
+     font-size: 16px;
+ }
+ .caa{
+     position: relative;
+     top: -14px;
+     font-size: 20px !important;
+ }
+ .alertt{
+     position: relative;
+     right: 13px;
+     top: 155px;
+ }
+ .sp{
+    position: relative;
+    bottom: 1px;
+    left: 9px;
+    font-size: 16px;
+ }
+ .spons{
+     height: 30px;
+     width: 90px;
+     border: 1px solid black;
+     color: rgb(253, 252, 252);
+     font-weight: bolder;
+     margin: 4px;
+     padding: 3px;
+     border-radius: 10px;
+     font-size: 13px;
+     background-color: black;
+ }
+ 
+ .sponso{
+     height: 30px;
+     width: 70px;
+     border: 1px solid black;
+     color: rgb(250, 249, 249);
+     font-weight: bolder;
+     margin: 10px;
+     padding: 3px;
+     border-radius: 10px;
+     font-size: 13px;
+     background-color: black;
+     position: relative;
+     left: 307px;
+     bottom: 40px;
+ }
+ .vas{
+     position: relative;
+     right: 90px;
+ }
+ .text-link{
+     width: 100%;
+     text-align: center;
+     position: relative;
+     left: 2px;
+     bottom: 50px;
+     font-weight: bolder;
+     height: 50px;
+   
+ }
+ 
+ .hidden{
+     height: 100%;
+     width: 210px;
+     animation-name: menu;
+     animation-fill-mode: forwards;
+     animation-duration: 0.3s;
+ }
+ @keyframes menu{
+     from{
+         width: 1px;
+     }
+     to{
+         width: 130px;
+     }
+ }
+ .with{
+     position: relative;
+     left: 2px;
+     bottom: 4px;
+ }
+ .afff{
+     font-size: 22px !important;
+ }
+ .bell-con{
+     font-size: 22px !important;
+     padding-bottom:5px !important;
+     font-weight: bolder;
+      
+     width:102% !important ;
+     margin:0 ;
+     border-left-color: grey !important;
+     border-right-color: grey !important;
+ }
+ .sponsorr{
+     font-size: 24px !important;
+     padding: 0;
+    
+     width:102% !important;
+     margin:0 ;
+     
+ }
+.ss{
+    font-size: 23px !important;
+    font-weight: bolder;
+    position: relative;
+    top: 6px;
+    right: 1px;
+}
+.set{
+    font-size: 23px !important;
+    font-weight: bolder;
+   
+    width: 102% !important;
+    margin:0 ;
+    
+}
+.input{
+    width: 80%;
+    padding: 5px;
+    top: 3px;
+    /* top: 0px; */
+    right: 0;
+}
+.tt{
+    font-size: 22px !important;
+    font-weight: bolder;
+    position: relative !important;
+    top: -10px !important;
+}
+.ww{
+    font-size: 22px !important;
+    font-weight: bolder !important;
+    color: #000;
+    position: relative !important;
+    top: -3px !important;
+    left: -2px !important;
+}
+.sett{
+    height: 30px;
+    width: 100%;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+}
+.setting{
+    font-size: 23px !important;
+    font-weight: bolder;
+    position: relative;
+    top: -10px;
+    left: -2px;
+}
+.withdraw-men {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+}
+button{
+    padding: 17px;
+    padding-top:8px;
+    padding-bottom: 10px;
+}.hh{
+    position: absolute;
+    top: 10px;
+    left: 69px;
+    font-size: 16px;
+    width: 51px;
+    height: 30px;
+    padding: 3px;
+}
+.menu{
+    border: 1px solid black;
+    position: fixed;
+    left: -3px;
+    top: 80px;
+    z-index: 1;
+    height: 100%;
+    width: 210px;
+    animation-name: menu;
+    animation-fill-mode: forwards;
+    animation-duration: 0.09s;
+}
+.ttt{
+    width: 103%;
+        z-index: 9;
+        position: absolute;
+        bottom: -20px;
+        right: -3px; 
+         
+}
+}
+
+@media (max-width: 375px ) {
+    .submit{
+        border-radius: 10px;
+        position: relative;
+        top: 20px;
+        left: 5px;
+        font-size: 20px !important;
+    }
+    .container{
+        position: relative;
+        top: 20px;
+    }
+    .ccoon {
+        padding-top: 7px;
+        position: relative;
+        top: 19px;
+        height: 40px;
+        width: 100%;
+        border: 2px solid black;
+        border-left-color: transparent;
+        border-right-color: transparent;
+}
+    
+    .cconn{
+        padding-top: 7px;
+        position: relative;
+        top: 40px;
+        left: 0px;
+        height: 40px;
+        width: 100%;
+        border: 2px solid black;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    .alertt{
+        padding-left: 20px;
+        padding-right: 19px;
+    }
+    .total{
+        font-size: 17px !important;
+    }
+     .ref-balance{
+         position: relative !important;
+         left: -105px !important; top: 31px;
+         
+     }
+     .contain{
+         height: 507px !important;
+     }
+     .con{
+         width:99%;
+         height: 130px;
+     }
+     .task-earnings{
+         position: relative;
+         bottom: 120px;
+         height: 120px;
+         width:140px;
+     }
+     .ref-num{
+         height: 120px;
+         width: 140px;
+     }
+    .ref-number{
+        font-size: 20px;
+    }
+    .task-bal{
+        font-size: 23px;
+    }
+    .div{
+        position: relative;
+        bottom: 8px;
+        font-size: 30px;
+    }
+    .photo{
+     position: absolute;
+     left: 86%;
+    }
+    .test{
+     position: fixed;
+     top:401px;    
+     right: 10px;
+     height: 40px;
+        width: 50px;
+    }
+    .tat{
+     color: rgb(8, 6, 7);
+     font-size: 17.8px;
+     height: 2px;
+     width: 3px;
+     position: relative;
+     bottom: 3px;
+     font-weight: bolder;
+     right: 20px;
+ }
+ .constant{
+     height: 120px;
+   
+ }
+ .sponsor-con{
+    width: 140px;
+    height: 75%;
+ }
+ 
+ .tas{
+    position: relative !important;
+                right: -13px;
+                top: 35px !important;
+                width: 100%;
+                right: 5px;
+                font-size: 25px;
+ }
+ .number-ref{
+     position: relative;
+     top: 25px;
+     right: 18px;
+ }
+ .cont{
+     height: 75%;
+     width: 100px;
+     border: 3px solid;
+     border-radius: 10px;
+     margin: 3px;
+     float: right;
+     position: relative;
+     left: 148px;
+     bottom: 1px;
+ }
+ 
+ .fa-users{
+     font-size: 31px !important;
+     position: relative;
+     bottom: 5px;
+ }
+ 
+ .top{
+     position: relative;
+     top: 200px;
+     height: 50px;
+     width: 93%;
+     border-radius: 20px;
+     background-color: transparent;
+     margin: 0 auto;
+    
+ }
+ .contan{
+     width:100.2%;
+     height: 100%;
+    background-color:transparent;
+     border-radius: 20px;
+ }
+ .post{
+     position: relative !important;
+     height: 90px;
+     width: 96%;
+      top: 45px;
+     margin: 0 auto;
+     left: 1px;
+     border: 3px solid;
+ }
+ .affilate{
+     font-size: 16px;
+ }
+ .caa{
+     position: relative;
+     top: -14px;
+     font-size: 20px !important;
+ }
+ 
+ .sp{
+    position: relative;
+                bottom: 1px;
+                left: 9px;
+                font-size: 16px;
+ }
+ .spons{
+     height: 30px;
+     width: 90px;
+     border: 1px solid black;
+     color: rgb(253, 252, 252);
+     font-weight: bolder;
+     margin: 4px;
+     padding: 3px;
+     border-radius: 10px;
+     font-size: 13px;
+     background-color: black;
+ }
+ 
+ .sponso{
+     height: 30px;
+     width: 70px;
+     border: 1px solid black;
+     color: rgb(250, 249, 249);
+     font-weight: bolder;
+     margin: 10px;
+     padding: 3px;
+     border-radius: 10px;
+     font-size: 13px;
+     background-color: black;
+     position: relative;
+     left: 260px;
+     bottom: 40px;
+ }
+ .vas{
+     position: relative;
+     right: 90px;
+ }
+ .text-link{
+     width: 100%;
+     text-align: center;
+     position: relative;
+     left: 2px;
+     bottom: 50px;
+     font-weight: bolder;
+     height: 50px;
+   
+ }
+ 
+ .hidden{
+     height: 100%;
+     width: 210px;
+     animation-name: menu;
+     animation-fill-mode: forwards;
+     animation-duration: 0.3s;
+ }
+ @keyframes menu{
+     from{
+         width: 1px;
+     }
+     to{
+         width: 130px;
+     }
+ }
+ .with{
+     position: relative;
+     left: 2px;
+     bottom: 4px;
+ }
+ .afff{
+     font-size: 22px !important;
+ }
+ .bell-con{
+     font-size: 22px !important;
+     padding-bottom:5px !important;
+     font-weight: bolder;
+      
+     width:102% !important ;
+     margin:0 ;
+     border-left-color: grey !important;
+     border-right-color: grey !important;
+ }
+ .sponsorr{
+     font-size: 24px !important;
+     padding: 0;
+    
+     width:102% !important;
+     margin:0 ;
+     
+ }
+.ss{
+    font-size: 23px !important;
+    font-weight: bolder;
+    position: relative;
+    top: 6px;
+    right: 1px;
+}
+.set{
+    font-size: 23px !important;
+    font-weight: bolder;
+   
+    width: 102% !important;
+    margin:0 ;
+    
+}
+.input{
+    width: 80%;
+    padding: 5px;
+    top: 3px;
+    /* top: 0px; */
+    right: 0;
+}
+.tt{
+    font-size: 22px !important;
+    font-weight: bolder;
+    position: relative !important;
+    top: -10px !important;
+}
+.ww{
+    font-size: 22px !important;
+    font-weight: bolder !important;
+    color: #000;
+    position: relative !important;
+    top: -3px !important;
+    left: -2px !important;
+}
+.sett{
+    height: 30px;
+    width: 100%;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+}
+.setting{
+    font-size: 23px !important;
+    font-weight: bolder;
+    position: relative;
+    top: -10px;
+    left: -2px;
+}
+.withdraw-men {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+}
+button{
+    padding: 17px;
+    padding-top:8px;
+    padding-bottom: 10px;
+}
+.hh{
+    position: absolute;
+    top: 10px;
+    left: 69px;
+    font-size: 16px;
+    width: 51px;
+    height: 30px;
+    padding: 3px;
+}
+.menu{
+    border: 1px solid black;
+    position: fixed;
+    /* right: 192px; */
+    left: -3px;
+    top: 80px;
+    z-index: 1;
+    height: 103%;
+    width: 210px;
+    animation-name: menu;
+    animation-fill-mode: forwards;
+    animation-duration: 0.09s;
+}
+.ttt{
+    width: 103%;
+                z-index: 9;
+                position: absolute;
+                bottom: -13px;
+                right: -3px;
+               
+}
+}
+
+@media (max-width:320px ) {
+    .container{
+        position: relative;
+        top: 39px;
+    }
+    .ccoon {
+        padding-top: 7px;
+        position: relative;
+        top: 39px;
+        height: 40px;
+        width: 100%;
+        border: 2px solid black;
+        border-left-color: transparent;
+        border-right-color: transparent;
+}
+    
+    .cconn{
+        padding-top: 7px;
+        position: relative;
+        top: 40px;
+        left: 0px;
+        height: 40px;
+        width: 100%;
+        border: 2px solid black;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+   .total{
+       font-size: 17px !important;
+   }
+    .ref-balance{
+        position: relative !important;
+        left: -105px !important;
+        top: 31px;
+        
+    }
+    .contain{
+        height: 507px !important;
+    }
+    .con{
+        width:99%;
+        height: 130px;
+    }
+    .task-earnings{
+        position: relative;
+        bottom: 120px;
+        height: 120px;
+        width:140px;
+    }
+    .ref-num{
+        height: 120px;
+        width: 140px;
+    }
+   .ref-number{
+       font-size: 20px;
+   }
+   .task-bal{
+       font-size: 23px;
+   }
+   .div{
+       position: relative;
+       bottom: 8px;
+       font-size: 30px;
+   }
+   .photo{
+    position: absolute;
+    left: 86%;
+   }
+   .test{
+    position: fixed;
+    top:401px;    
+    right: 10px;
+    height: 40px;
+       width: 50px;
+   }
+   .tat{
+    color: rgb(8, 6, 7);
+    font-size: 17.8px;
+    height: 2px;
+    width: 3px;
+    position: relative;
+    bottom: 3px;
+    font-weight: bolder;
+    right: 20px;
+}
+.constant{
+    height: 120px;
+    position: relative !important;
+    top: 10px !important;
+}
+.sponsor-con{
+   width: 140px;
+   height: 75%;
+}
+
+.tas{
+    position: relative !important;
+    right: -13px;
+    top: 35px !important;
+    width: 100%;
+    right: 5px;
+    font-size: 22px;
+}
+.number-ref{
+    position: relative;
+    top: 25px;
+    right: 18px;
+}
+.cont{
+    height: 75%;
+    width: 100px;
+    border: 3px solid;
+    border-radius: 10px;
+    margin: 3px;
+    float: right;
+    position: relative;
+    left: 148px;
+    bottom: 1px;
+}
+
+.fa-users{
+    font-size: 31px !important;
+    position: relative;
+    bottom: 5px;
+}
+
+.top{
+    position: relative;
+    top: 200px;
+    height: 50px;
+    width: 93%;
+    border-radius: 20px;
+    background-color: transparent;
+    margin: 0 auto;
+   
+}
+.contan{
+    width:100.2%;
+    height: 107%;
+   background-color:transparent;
+    border-radius: 20px;
+}
+.post{
+    position: relative !important;
+    height: 90px;
+    width: 96%;
+    top: 37px;
+    margin: 0 auto;
+    left: 1px;
+    border: 3px solid;
+}
+.affilate{
+    font-size: 16px;
+}
+.caa{
+    position: relative;
+    top: -14px;
+    font-size: 20px !important;
+}
+
+.sp{
+    position: relative;
+                bottom: 1px;
+                left: 9px;
+                font-size: 16px;
+}
+.spons{
+    height: 30px;
+    width: 90px;
+    border: 1px solid black;
+    color: rgb(253, 252, 252);
+    font-weight: bolder;
+    margin: 4px;
+    padding: 3px;
+    border-radius: 10px;
+    font-size: 13px;
+    background-color: black;
+}
+.acc{
+    position: relative;
+    right: 20px;
+}
+.sponso{
+    height: 30px;
+    width: 70px;
+    border: 1px solid black;
+    color: rgb(250, 249, 249);
+    font-weight: bolder;
+    margin: 10px;
+    padding: 3px;
+    border-radius: 10px;
+    font-size: 13px;
+    background-color: black;
+    position: relative;
+    left: 210px;
+    bottom: 40px;
+}
+.vas{
+    position: relative;
+    right: 90px;
+}
+.text-link{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 2px;
+    bottom: 50px;
+    font-weight: bolder;
+    height: 50px;
+  
+}
+
+.hidden{
+    height: 100%;
+    width: 210px;
+    animation-name: menu;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+}
+@keyframes menu{
+    from{
+        width: 1px;
+    }
+    to{
+        width: 130px;
+    }
+}
+.with{
+    position: relative;
+    left: 2px;
+    bottom: 4px;
+}
+.afff{
+    font-size: 22px !important;
+}
+.bell-con{
+    font-size: 22px !important;
+    padding-bottom:5px !important;
+    font-weight: bolder;
+     
+    width:102% !important ;
+    margin:0 ;
+    border-left-color: grey !important;
+    border-right-color: grey !important;
+}
+.sponsorr{
+    font-size: 24px !important;
+    padding: 0;
+   
+    width:102% !important;
+    margin:0 ;
+    
+}
+.ss{
+    font-size: 23px !important;
+    font-weight: bolder;
+    position: relative;
+    top: 6px;
+    right: 1px;
+}
+.set{
+    font-size: 23px !important;
+    font-weight: bolder;
+   
+    width: 102% !important;
+    margin:0 ;
+    
+}
+.input{
+    width: 80%;
+    padding: 5px;
+    top: 3px;
+    /* top: 0px; */
+    right: 0;
+}
+.tt{
+    font-size: 22px !important;
+    font-weight: bolder;
+    position: relative !important;
+    top: -10px !important;
+}
+.ww{
+    font-size: 22px !important;
+    font-weight: bolder !important;
+    color: #000;
+    position: relative !important;
+    top: -3px !important;
+    left: -2px !important;
+}
+.sett{
+    height: 30px;
+    width: 100%;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+}
+.setting{
+    font-size: 23px !important;
+    font-weight: bolder;
+    position: relative;
+    top: -10px;
+    left: -2px;
+}
+.withdraw-men {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+}
+button{
+    padding: 17px;
+    padding-top:8px;
+    padding-bottom: 9px;
+}
+.hh{
+    position: absolute;
+                top: 10px;
+                left: 69px;
+                font-size: 16px;
+                width: 51px;
+                height: 30px;
+                padding: 3px;
+}
+.menu{
+    border: 1px solid black;
+                position: fixed;
+                /* right: 192px; */
+                left: -3px;
+                top: 80px;
+                z-index: 1;
+                height: 100%;
+                width: 210px;
+                animation-name: menu;
+                animation-fill-mode: forwards;
+                animation-duration: 0.09s;
+}
+.ttt{
+    width: 103%;
+        z-index: 9;
+        position: absolute;
+        bottom: -20px;
+        right: -3px; 
+       
+}
+.submit{
+    border-radius: 10px;
+    position: relative;
+    left: 5px;
+    top: 20px;
+
+    font-size: 20px !important;
+}
+}
