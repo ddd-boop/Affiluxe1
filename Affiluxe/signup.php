@@ -1,0 +1,279 @@
+<?php
+session_start();
+$servername = "fdb1029.awardspace.net";
+$username = "4567167_affiluxe"; 
+$password = "7YxdH0s*4P59pmqw"; 
+$dbname = "4567167_affiluxe";
+
+$referral_code = isset($_GET['ref']) ? htmlspecialchars($_GET['ref']) : '';
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    error_log("Connection failed: " . $conn->connect_error);
+    die("Sorry, we're having some technical difficulties.");
+}
+
+// Function to generate a unique referral code
+function generateReferralCode() {
+    return substr(md5(uniqid(rand(), true)), 0, 10);
+}
+
+$error_messages = [];
+$success_message = '';
+$coupon_message = '';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = trim($_POST['name'] ?? '');
+    $email = trim($_POST['email'] ?? '');
+    $password = trim($_POST['password'] ?? '');
+    $coupon_code = trim($_POST['coupon_code'] ?? '');
+    $referred_by = isset($_POST['referral_code']) ? trim($_POST['referral_code']) : null;
+    $referral_code = generateReferralCode();
+
+    // Validate inputs
+    if (empty($name)) {
+        $error_messages['name'] = "Name is required.";
+    }
+    if (empty($email)) {
+        $error_messages['email'] = "Email is required.";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $error_messages['email'] = "Invalid email format.";
+    }
+    if (empty($password)) {
+        $error_messages['password'] = "Password is required.";
+    }
+    if (empty($coupon_code)) {
+        $error_messages['coupon_code'] = "Coupon code is required.";
+    }
+
+    // If there are no validation errors, proceed with coupon validation
+    if (empty($error_messages)) {
+        // Validate the coupon code
+        $coupon_stmt = $conn->prepare("SELECT * FROM coupons WHERE code = ? AND is_used = FALSE AND expiration_time > NOW()");
+        if (!$coupon_stmt) {
+            error_log("Prepare failed (coupon): " . $conn->error);
+            die("Sorry, we're having some technical difficulties.");
+        }
+        $coupon_stmt->bind_param("s", $coupon_code);
+        $coupon_stmt->execute();
+        $coupon_result = $coupon_stmt->get_result();
+
+        if ($coupon_result->num_rows > 0) { // Coupon is valid
+            // Check for existing email
+            $stmt = $conn->prepare("SELECT id FROM users WHERE email = ?");
+            if (!$stmt) {
+                error_log("Prepare failed (email check): " . $conn->error);
+                die("Sorry, we're having some technical difficulties.");
+            }
+            $stmt->bind_param("s", $email);
+            $stmt->execute();
+            $stmt->store_result();
+
+            if ($stmt->num_rows > 0) { // Email already exists
+                $error_messages['email'] = "Email already exists. Please use a different email.";
+            } else {
+                // Insert new user with initial points
+                $stmt->close(); // Close the previous statement
+                $points = 1; // New user gets $1
+                $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+                $stmt = $conn->prepare("INSERT INTO users (name, email, password, referral_code, referred_by, points) VALUES (?, ?, ?, ?, ?, ?)");
+                if (!$stmt) {
+                    error_log("Prepare failed (insert user): " . $conn->error);
+                    die("Sorry, we're having some technical difficulties.");
+                }
+                $stmt->bind_param("ssssis", $name, $email, $hashed_password, $referral_code, $referred_by, $points);
+
+                if ($stmt->execute()) { // Successful execution
+                    // Mark the coupon as used
+                    $update_coupon_stmt = $conn->prepare("UPDATE coupons SET is_used = TRUE WHERE code = ?");
+                    if (!$update_coupon_stmt) {
+                        error_log("Prepare failed (update coupon): " . $conn->error);
+                        die("Sorry, we're having some technical difficulties.");
+                    }
+                    $update_coupon_stmt->bind_param("s", $coupon_code);
+                    $update_coupon_stmt->execute();
+                    $update_coupon_stmt->close();
+
+                    // Check if referred by someone
+                    if ($referred_by) {
+                        // Update referrer's points
+                        $update_stmt = $conn->prepare("UPDATE users SET points = points + 3 WHERE referral_code = ?");
+                        if (!$update_stmt) {
+                            error_log("Prepare failed (update referrer): " . $conn->error);
+                            die("Sorry, we're having some technical difficulties.");
+                        }
+                        $update_stmt->bind_param("s", $referred_by);
+                        $update_stmt->execute();
+                        $update_stmt->close();
+                    }
+
+                    $success_message = "Registration successful! You will be redirected to the login page shortly.";
+                } else {
+                    error_log("User insert failed: " . $stmt->error);
+                    $error_messages['general'] = "Sorry, we couldn't complete your registration.";
+                }
+                $stmt->close(); // Closing the statement
+            }
+        } else {
+            // Coupon is invalid
+            $error_messages['coupon_code'] = "Invalid or expired coupon code.";
+        }
+        $coupon_stmt->close(); // Close the coupon statement
+    }
+}
+
+$conn->close(); // Closing the database connection
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/earn.jpeg">
+    <title>Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+             
+ background-image: url("images/one.jpeg");
+ background-size: cover;
+               background-repeat: no-repeat;
+            margin: 0;
+            padding: 20px;
+            color: #fff; /* White text */
+             
+            zoom: 100%;    
+        }
+
+        .container {
+            max-width: 403px;
+            margin: auto;
+            background: transparent; /* Dark red background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            animation: pop 0.5s ease-in-out; /* Pop animation */
+            border: 3px solid darkred;   
+        }
+
+        @keyframes pop {
+            0% { transform: scale(0.95); opacity: 0.7; }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff; /* White text */
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #fff; /* White text */
+        }
+
+        input {
+            width: 98%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #fff; /* White border */
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+            color: #fff; /* White text */
+            transition: all 0.3s ease; /* Smooth transition */
+        }
+
+        input:focus {
+            border-color: #ff4500; /* Bright red border on focus */
+            outline: none;
+            box-shadow: 0 0 5px rgba(255, 69, 0, 0.5); /* Glow effect */
+        }
+
+        .error {
+            color: #ff0000; /* Red text for error messages */
+            text-align: center;
+        }
+
+        .message {
+            color: #00ff00; /* Green text for success messages */
+            text-align: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: darkred; /* Bright red background */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+        }
+
+        button:hover {
+            background-color: #990000; /* Darker red on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        p {
+            text-align: center;
+            color: #fff; /* White text */
+        }
+
+        a {
+            color: #ff4500; /* Bright red links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Signup</h1>
+        <?php if (!empty($error_messages)): ?>
+            <?php foreach ($error_messages as $field => $message): ?>
+                <p class="error"><?php echo htmlspecialchars($message); ?></p>
+            <?php endforeach; ?>
+        <?php endif; ?>
+        <?php if ($coupon_message): ?>
+            <p class="message"><?php echo htmlspecialchars($coupon_message); ?></p>
+        <?php endif; ?>
+        <?php if ($success_message): ?>
+            <p class="message"><?php echo htmlspecialchars($success_message); ?></p>
+            <script>
+                // Redirect to login.php after 2 seconds
+                setTimeout(function() {
+                    window.location.href = 'login.php';
+                }, 2000); // 2000 milliseconds = 2 seconds
+            </script>
+        <?php endif; ?>
+        
+        <form method="POST" action="">
+                        <label for="name">Name:</label>
+            <input type="text" name="name" required value="<?php echo isset($name) ? htmlspecialchars($name) : ''; ?>">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" required value="<?php echo isset($email) ? htmlspecialchars($email) : ''; ?>">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="coupon_code">Coupon Code:</label>
+            <input type="text" name="coupon_code" required value="<?php echo isset($coupon_code) ? htmlspecialchars($coupon_code) : ''; ?>">
+
+            <label for="referral_code">Referral Code (optional):</label>
+            <input type="text" id="referral_code" name="referral_code" value="<?php echo $referral_code; ?>" >
+
+            <button type="submit">Signup</button>
+        </form>
+        <p>Login <a href="login.php">here</a></p>
+    </div>
+</body>
+</html>
